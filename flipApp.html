@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart Design</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffe5a3;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #ffe5a3;
+      padding: 10px;
+    }
+    .header div {
+      margin: 0 5px;
+    }
+    .search-bar {
+      margin: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .search-bar input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .main-banner {
+      margin: 20px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .product-card {
+      display: inline-block;
+      min-width: 250px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-right: 20px;
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .categories {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+    .categories div {
+      text-align: center;
+      margin: 10px;
+      width: 80px;
+      cursor: pointer;
+    }
+    .categories img {
+      width: 100px;
+      height: 100px;
+      border-radius: 5px;
+    }
+    .footer
+     {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 10px;
+    }
+    .category-items 
+    {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      justify-content: space-around;
+      visibility: hidden;
+    }
+    .category-item 
+    {
+      min-width: 100px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      margin: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .category-item img 
+    {
+      width: 50%;
+      border-radius:10px;
+    }
+  </style>
+</head>
+<body>
+
+<center>
+<div class="logo">
+  <img src="/images/flip.logo.png" alt="app logo">
+</div></center>
+
+  <div class="header">
+    <div><strong>Flipkart</strong></div>
+    <div>kankarbagh patna,doctor colony,patna, Bihar</div>
+    <div><button>Brand Mall</button></div>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search for products...">
+  </div>
+  
+  <div class="main-banner">
+    <h2>iPhone 16</h2>
+    <center>
+    <p>Built for Apple Intelligence</p>
+    <marquee behavior="scroll" scrollamount="10">
+      <div class="product-card">
+        <img src="/images/img_black.jpg"  height="350" width="400px" alt="iPhone 16">
+        </center>
+        <p>iPhone 16 - Black</p>
+        <p>From ₹63,999*</p>
+      </div>
+      <div class="product-card">
+        <img src="/images/img_blu.jpg" width="400px" height="350" alt="iPhone 16">
+        <p>iPhone 16 - Blue</p>
+        <p>From ₹63,999*</p>
+      </div>
+      <div class="product-card">
+        <img src="/images/img_pink.jpg" width="400px" height="350" alt="iPhone 16">
+        <p>iPhone 16 - Pink</p>
+        <p>From ₹63,999*</p>
+      </div>
+      <div class="product-card">
+        <img src="/images/img_green.jpg"  width="400px" height="350"alt="iPhone 16">
+        <p>iPhone 16 - Green</p>
+        <p>From ₹63,999*</p>
+      </div>
+      <div class="product-card">
+        <img src="/images/img_rgb.jpg" width="400px" height="350"alt="iPhone 16">
+        <p>iPhone 16 - All Colors</p>
+        <p>From ₹63,999*</p>
+      </div>
+    </marquee>
+  </div>
+
+  <div class="categories">
+    <div>
+      <img src="/images/img_qr.png" alt="Scan & Pay">
+      <p>Scan & Pay</p>
+    </div>
+    <div>
+      <img src="/images/img_fashion.jpg" alt="Fashion">
+      <p>Fashion</p>
+    </div>
+    <div>
+      <img src="/images/img_phone.jpg" alt="Mobiles">
+      <p>Mobiles</p>
+    </div>
+    <div id="beauty-category">
+      <img src="/images/img_beauty.jpg" alt="Beauty">
+      <p>Beauty</p>
+    </div>
+    <div>
+      <img src="/images/img_gadgets.jpeg" alt="Gadgets">
+      <p>Gadgets</p>
+    </div>
+  </div>
+
+  <!-- Beauty Category Items (Initially hidden) -->
+  <div class="category-items" id="beauty-items">
+    <div class="category-item">
+      <img src="/images/beauti_cream.jpg" alt="Beauty Item 1">
+      <p>Moisturizing Cream</p>
+      <p>₹499</p>
+    </div>
+    <div class="category-item">
+      <img src="/images/shampoo.jpeg" alt="Beauty Item 2">
+      <p>Shampoo</p>
+      <p>₹299</p>
+    </div>
+    <div class="category-item">
+      <img src="/images/facewash.jpeg" alt="Beauty Item 3" height="100px" width="500px">
+      <p>Face Wash</p>
+      <p>₹199</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 Flipkart. All rights reserved.</p>
+  </div>
+
+ 
+
+
+ <script>
+    // JavaScript to toggle the visibility of beauty products when clicking on the "Beauty" category
+    document.getElementById('beauty-category').addEventListener('click', function()
+     {
+      const beautyItems = document.getElementById('beauty-items');
+      if (beautyItems.style.visibility === 'hidden') 
+      {
+        beautyItems.style.visibility = 'visible';
+      }
+       else
+      {
+        beautyItems.style.visibility = 'hidden';
+      }
+    });
+  </script>
+
+</body>
+</html>
